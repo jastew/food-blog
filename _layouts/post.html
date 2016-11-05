@@ -1,0 +1,32 @@
+---
+layout: default
+---
+<h1 class="page__title">{{ page.title }}</h1>
+{{ content }}
+
+<div class="recipe__ingredients">
+  <h2>Ingredients</h2>
+  <ul class="ingredients">
+    {% for ingredient in page.ingredients %}
+      <li class="ingredients__item">
+        <p class="ingredient">
+          <span class="ingredients__amount">{{ ingredient.amount }}</span>
+          <span class="ingredients__name">{{ ingredient.name }}</span>
+        </p>
+      </li>
+    {% endfor %}
+  </ul>
+</div><!--
+
+--><div class="recipe__instructions">
+  <h2>Instructions</h2>
+  <ol>
+    {% for instruction in page.instructions %}
+      <li>{{ instruction }}</li>
+    {% endfor %}
+  </ol>
+</div>
+
+<div class="recipe__share">
+  <a href="http://www.facebook.com/sharer.php?u={{ site.url }}{{ page.url | absolute }}" target="_blank" rel="nofollow">Share on Facebook</a>
+</div>

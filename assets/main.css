@@ -1,0 +1,194 @@
+body {
+  margin: 0;
+  font-family: helvetica, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+
+
+.container {
+  padding: 0 1em;
+  max-width: 1100px;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+
+.header {
+  padding: 1em 0;
+  /*margin-bottom: 1em;*/
+  background: #fff;
+  color: #333;
+}
+@media (min-width: 900px) {
+  .header {
+    text-align: center;
+  }
+}
+
+.header__brand {
+  margin: 0;
+}
+
+.brand {
+  text-decoration: none;
+  text-shadow: 0 1px #000;
+  color: inherit;
+}
+
+.nav {
+  background: #fff;
+}
+.nav__items {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.nav__item {
+  display: inline-block;
+}
+.nav__link {
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+@media (min-width: 900px) {
+  .page__title {
+    text-align: center;
+  }
+}
+
+
+
+.posts {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.posts__item {
+  vertical-align: top;
+  display: block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@media (min-width: 700px) {
+  .posts {
+    margin-left: -1em;
+  }
+  .posts__item {
+    display: inline-block;
+    width: 50%;
+    padding-left: 1em;
+  }
+}
+@media (min-width: 900px) {
+  .posts__item {
+    width: 33.3334%;
+  }
+}
+
+
+.post {
+  margin-bottom: 2em;
+}
+.post__image {
+  position: relative;
+  display: block;
+  padding-bottom: 80%;
+  margin-bottom: 1em;
+  overflow: hidden;
+}
+.post__image img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+.post__body {
+  text-align: center;
+}
+.post__title {
+  display: block;
+  margin: 0.5rem 0;
+  text-align: center;
+  font-family: serif;
+  font-size: 1.5rem;
+}
+.post__date {
+  margin: 0 0 1rem;
+  font-size: 90%;
+  text-align: center;
+}
+.post__category {
+  margin: 0;
+  font-size: 90%;
+  text-align: center;
+  /*text-transform: uppercase;*/
+}
+/*.post__category--breakfast {
+  background-color: #ffb837;
+  color: #fff;
+}
+.post__category--dinner {
+  background-color: #bada55;
+  color: #fff;
+}*/
+.post__copy {
+  display: none;
+}
+.post__link {
+  text-decoration: none;
+  color: inherit;
+}
+.post__cta {
+  display: inline-block;
+  color: inherit;
+}
+
+
+
+
+.recipe {
+
+}
+@media (min-width: 767px) {
+  .recipe__ingredients,
+  .recipe__instructions {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+  }
+}
+
+
+.ingredients {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.ingredients__item {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 0.5rem;
+}
+.ingredients__name {
+  font-weight: bold;
+}
+.ingredients__amount {
+  float: right;
+  clear: right;
+  margin: 0 0 1em;
+}

@@ -1,0 +1,22 @@
+<header class="header">
+
+  <div class="container">
+    <nav class="nav">
+      <ul class="nav__items">
+        {% for page in site.pages | sort:"index" %}
+          {% if page.title %}
+          <li class="nav__item">
+            <a href="{{ page.url | relative_url }}" class="nav__link">{{ page.title }}</a>
+          </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+
+  <div class="container">
+    <h1 class="header__brand"><a href="/" class="brand">{{ site.title }}</a></h1>
+    <p>Simple, healthy recipes for your favourite food.</p>
+  </div>
+
+</header>

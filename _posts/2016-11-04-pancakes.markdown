@@ -1,0 +1,40 @@
+---
+layout: post
+title:  Spelt Pancakes
+date:   2016-11-04 18:55:36 +0000
+category: Breakfast
+image: https://scontent-lhr3-1.cdninstagram.com/t51.2885-15/e35/14711942_343602899315014_147679607204610048_n.jpg?ig_cache_key=MTM2MDMxNjg2NzAzMzc4OTEzNA%3D%3D.2
+ingredients:
+  -
+    name: Spelt Flour
+    amount: 100g
+  -
+    name: Baking Powder
+    amount: 1tsp
+  -
+    name: Milled Flaxseed
+    amount: 1tbsp
+  -
+    name: Rice Milk
+    amount: 180ml
+  -
+    name: Vanilla Essence
+    amount: 1/2tsp
+  -
+    name: Apple Cider Vinegar
+    amount: 1bsp
+  -
+    name: Liquid Sweetener (e.g. Maple Syrup, Date Syrup)
+    amount: 2tbsp
+  -
+    name: Dark Chocolate
+    amount: 10g
+
+instructions:
+  - Combine and mix well the spelt flour, flaxseed and baking powder
+  - Combine and mix well the other ingredients unil you get a smooth liquid (There may be some lumps).
+  - Add 1tsp of oil to a pan on a medium heat and spread the oil using some kitchen paper. There shouldn't be much oil left on the pan.
+  - Add some of the mixture to the pan. You can go big or small depending on your preference. Try to spread the mixture by rotating the pan.
+  - Flip the pancake when bubbles appear in the centre of the pancake.
+  - Once flipped...
+---
