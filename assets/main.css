@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: 0 0 1em;
   font-family: helvetica, sans-serif;
 }
 
@@ -22,7 +22,6 @@ img {
 
 
 .header {
-  padding: 1em 0;
   /*margin-bottom: 1em;*/
   background: #fff;
   color: #333;
@@ -170,8 +169,12 @@ img {
 .recipe__share {
   margin-bottom: 1em;
 }
-.recipe__pagination {
+.recipe__navigation {
   overflow: hidden;
+}
+.recipe__next,
+.recipe__prev {
+  max-width: 50%;
 }
 .recipe__next::before {
   content: '<< ';
@@ -184,6 +187,7 @@ img {
 }
 .recipe__prev {
   float: right;
+  text-align: right;
 }
 @media print {
   .recipe__media,

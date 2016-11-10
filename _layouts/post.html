@@ -56,8 +56,8 @@ layout: default
 
     <div class="recipe__share">
       <a href="http://www.facebook.com/sharer.php?u={{ site.url }}{{ page.url | absolute }}" target="_blank" rel="nofollow">Share on Facebook</a>
-      <a href='http://twitter.com/share?url={{ site.url }}{{ page.url}}&text={{ page.title }}&via={{ site.twitter_username }}' class='button'>Share on Twitter</a>
-      <a href="mailto:?subject={{ page.title }}&body=<strong>Test</strong>{{ site.url }}{{ page.url }}">Share via Email</a>
+      <a href='http://twitter.com/share?url={{ site.url }}{{ page.url }}&text={{ page.title }}&via={{ site.twitter_username }}' class='button'>Share on Twitter</a>
+      <a href="mailto:?subject={{ page.title }}&body={{ site.url }}{{ page.url }}">Share via Email</a>
     </div>
 
     <div class="recipe__print">
