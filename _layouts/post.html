@@ -1,32 +1,77 @@
 ---
 layout: default
 ---
-<h1 class="page__title">{{ page.title }}</h1>
-{{ content }}
+<div class="recipe">
 
-<div class="recipe__ingredients">
-  <h2>Ingredients</h2>
-  <ul class="ingredients">
-    {% for ingredient in page.ingredients %}
-      <li class="ingredients__item">
-        <p class="ingredient">
-          <span class="ingredients__amount">{{ ingredient.amount }}</span>
-          <span class="ingredients__name">{{ ingredient.name }}</span>
-        </p>
-      </li>
-    {% endfor %}
-  </ul>
-</div><!--
+  <div class="recipe__title">
+    <h1 class="page__title">{{ page.title }}</h1>
+  </div>
 
---><div class="recipe__instructions">
-  <h2>Instructions</h2>
-  <ol>
-    {% for instruction in page.instructions %}
-      <li>{{ instruction }}</li>
-    {% endfor %}
-  </ol>
+  <div class="recipe__media">
+    <div class="recipe__image">
+      <img src="{{ page.image }}" alt="">
+    </div>
+  </div><!--
+
+  --><div class="recipe__body">
+    <div class="recipe__copy">
+      {{ content }}
+    </div>
+
+    <div class="recipe__time">
+      {% if page.prep %}
+      <p class="recipe__prep"><strong>Prep time</strong> {{ page.prep }}</p>
+      {% endif %}
+      {% if page.cook %}
+      <p class="recipe__cooking"><strong>Cook time</strong> {{ page.cook }}</p>
+      {% endif %}
+    </div>
+
+    {% if page.serves %}
+    <p class="recipe__serves"><strong>Serves</strong> {{ page.serves }}</p>
+    {% endif %}
+
+    <div class="recipe__ingredients">
+      <h2>Ingredients</h2>
+      <ul class="ingredients">
+        {% for ingredient in page.ingredients %}
+          <li class="ingredients__item">
+            <div class="ingredient">
+              <span class="ingredients__amount">{{ ingredient.amount }}</span>
+              <span class="ingredients__name">{{ ingredient.name }}</span>
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+    </div><!--
+
+    --><div class="recipe__instructions">
+      <h2>Instructions</h2>
+      <ol>
+        {% for instruction in page.instructions %}
+          <li>{{ instruction }}</li>
+        {% endfor %}
+      </ol>
+    </div>
+
+    <div class="recipe__share">
+      <a href="http://www.facebook.com/sharer.php?u={{ site.url }}{{ page.url | absolute }}" target="_blank" rel="nofollow">Share on Facebook</a>
+      <a href='http://twitter.com/share?url={{ site.url }}{{ page.url}}&text={{ page.title }}&via={{ site.twitter_username }}' class='button'>Share on Twitter</a>
+      <a href="mailto:?subject={{ page.title }}&body=<strong>Test</strong>{{ site.url }}{{ page.url }}">Share via Email</a>
+    </div>
+
+    <div class="recipe__print">
+      <a href="#" onclick="window.print()">Print Recipe</a>
+    </div>
+
+  </div>
 </div>
 
-<div class="recipe__share">
-  <a href="http://www.facebook.com/sharer.php?u={{ site.url }}{{ page.url | absolute }}" target="_blank" rel="nofollow">Share on Facebook</a>
+<div class="recipe__navigation">
+  {% if page.next.url %}
+    <a href="{{ page.next.url }}" class="recipe__next">{{ page.next.title }}</a>
+  {% endif %}
+  {% if page.previous.url %}
+    <a href="{{ page.previous.url }}" class="recipe__prev">{{ page.previous.title }}</a>
+  {% endif %}
 </div>

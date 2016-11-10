@@ -4,6 +4,9 @@ title:  Spelt Pancakes
 date:   2016-11-04 18:55:36 +0000
 category: Breakfast
 image: https://scontent-lhr3-1.cdninstagram.com/t51.2885-15/e35/14711942_343602899315014_147679607204610048_n.jpg?ig_cache_key=MTM2MDMxNjg2NzAzMzc4OTEzNA%3D%3D.2
+prep: 10 mins
+cook: 12 mins
+serves: 3 large pancakes
 ingredients:
   -
     name: Spelt Flour
