@@ -69,9 +69,9 @@ layout: default
 
 <div class="recipe__navigation">
   {% if page.next.url %}
-    <a href="{{ page.next.url }}" class="recipe__next">{{ page.next.title }}</a>
+    <a href="{{ site.url }}{{ page.next.url }}" class="recipe__next">{{ page.next.title }}</a>
   {% endif %}
   {% if page.previous.url %}
-    <a href="{{ page.previous.url }}" class="recipe__prev">{{ page.previous.title }}</a>
+    <a href="{{ site.url }}{{ page.previous.url }}" class="recipe__prev">{{ page.previous.title }}</a>
   {% endif %}
 </div>
