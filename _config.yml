@@ -35,6 +35,7 @@ defaults:
 gems:
   - jekyll-feed
 exclude:
+  - sass
   - Gemfile
   - Gemfile.lock
   - node_modules

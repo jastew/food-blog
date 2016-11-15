@@ -8,6 +8,20 @@ img {
   vertical-align: middle;
 }
 
+.btn {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0.5em;
+  text-decoration: none !important;
+  background: #eee;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  color: #000;
+
+  &:hover {
+    background: #ddd;
+  }
+}
 
 
 .container {

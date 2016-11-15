@@ -1,0 +1,27 @@
+{
+  "name": "food-blog",
+  "version": "1.0.0",
+  "description": "Static recipe blog",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "browser-sync": "^2.17.6",
+    "gulp-sass": "^2.3.2",
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "child_process": "^1.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jastew/food-blog.git"
+  },
+  "author": "Jason Stewart",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jastew/food-blog/issues"
+  },
+  "homepage": "https://github.com/jastew/food-blog#readme"
+}
