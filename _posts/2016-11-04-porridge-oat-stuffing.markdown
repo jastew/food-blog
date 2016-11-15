@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: recipe
 title:  "Porridge Oat Stuffing"
 date:   2016-11-04 18:55:36 +0000
 category: Dinner

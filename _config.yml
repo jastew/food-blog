@@ -26,6 +26,12 @@ facebook_username: jastew
 
 # Build settings
 markdown: kramdown
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      comments: true
 gems:
   - jekyll-feed
 exclude:

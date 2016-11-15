@@ -1,5 +1,6 @@
 ---
 layout: default
+comments: true
 ---
 <div class="recipe">
 
@@ -75,3 +76,10 @@ layout: default
     <a href="{{ page.previous.url | relative_url}}" class="recipe__prev">{{ page.previous.title }}</a>
   {% endif %}
 </div>
+
+{% if page.comments %}
+  <h2>Comments</h2>
+  <div class="recipe__comments">
+    {% include comments.html %}
+  </div>
+{% endif %}
