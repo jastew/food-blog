@@ -200,10 +200,16 @@ img {
   }
 }
 .recipe__share {
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
+
+  a {
+    margin-right: 0.25rem;
+    margin-bottom: 0.5rem;
+  }
 }
 .recipe__navigation {
   overflow: hidden;
+  margin-bottom: 1rem;
 }
 .recipe__next,
 .recipe__prev {
