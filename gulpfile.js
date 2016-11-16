@@ -13,7 +13,7 @@ gulp.task('jekyll-build', function (done) {
 });
 
 gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
-  browserSync.reload({stream: true});
+  browserSync.reload();
 });
 
 gulp.task('browser-sync', ['jekyll-build'], function () {
