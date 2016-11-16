@@ -19,7 +19,7 @@ img {
   color: #000;
 
   &:hover {
-    background: #ddd;
+    background: #e8e8e8;
   }
 }
 
@@ -178,7 +178,9 @@ img {
   margin: 0 0 0.25rem;
 }
 .recipe__media {
+  overflow: hidden;
   margin-bottom: 1rem;
+  border-radius: 3px;
 }
 @media (min-width: 700px) {
   .recipe__media,
@@ -191,7 +193,7 @@ img {
     margin-bottom: 1rem;
   }
   .recipe__body {
-    padding-left: 1em;
+    padding-left: 2em;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -208,13 +210,17 @@ img {
   max-width: 50%;
 }
 .recipe__next::before {
-  content: '<< ';
+  display: inline-block;
+  margin-right: 0.5rem;
+  content: '\00ab';
 }
 .recipe__next {
   float: left;
 }
 .recipe__prev::after {
-  content: ' >>';
+  display: inline-block;
+  margin-left: 0.5rem;
+  content: '\00bb';
 }
 .recipe__prev {
   float: right;
