@@ -27,7 +27,7 @@ gulp.task('browser-sync', ['jekyll-build'], function () {
 gulp.task('css', function () {
   console.log('css wooooo!');
   return gulp.src('sass/**/*.scss')
-    .pipe(sass().on('error', sass.logError))
+    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(gulp.dest('css/'))
     .pipe(gulp.dest('_site/css/'))
     .pipe(browserSync.stream());
