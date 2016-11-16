@@ -33,3 +33,4 @@ instructions:
   - While they cook add the oats and stock in to another bowl and mix
   - Add the oats to the pan and combine all ingredients
 ---
+Simple, filling and best of all delicious!

@@ -1,5 +1,5 @@
 body {
-  margin: 0 0 1em;
+  margin: 1em 0;
   font-family: helvetica, sans-serif; }
 
 img {
@@ -44,7 +44,22 @@ img {
   color: inherit; }
 
 .nav {
-  background: #fff; }
+  background: #eee;
+  border-radius: 3px; }
+
+.nav__items {
+  padding: 0;
+  margin: 0;
+  list-style-type: none; }
+
+.nav__item {
+  display: inline-block; }
+
+.nav__link {
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  color: inherit; }
 
 .posts {
   padding: 0;
@@ -98,18 +113,19 @@ img {
   font-size: 90%; }
 
 .post__category {
+  display: none;
+  padding: 0.25rem;
   margin: 0;
-  font-size: 90%;
-  /*text-transform: uppercase;*/ }
+  font-size: 90%; }
 
-/*.post__category--breakfast {
+.post__category--Breakfast {
   background-color: #ffb837;
-  color: #fff;
-}
-.post__category--dinner {
+  color: #fff; }
+
+.post__category--Dinner {
   background-color: #bada55;
-  color: #fff;
-}*/
+  color: #fff; }
+
 .post__copy {
   display: none; }
 
@@ -123,6 +139,14 @@ img {
 
 .recipe {
   margin-bottom: 1em; }
+  .recipe li {
+    margin-bottom: 0.5rem; }
+
+.recipe__title {
+  margin: 0 0 0.25rem; }
+
+.recipe__media {
+  margin-bottom: 1rem; }
 
 @media (min-width: 700px) {
   .recipe__media,
@@ -130,6 +154,8 @@ img {
     vertical-align: top;
     display: inline-block;
     width: 50%; }
+  .recipe__media {
+    margin-bottom: 1rem; }
   .recipe__body {
     padding-left: 1em;
     -webkit-box-sizing: border-box;

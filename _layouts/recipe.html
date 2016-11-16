@@ -4,10 +4,6 @@ comments: true
 ---
 <div class="recipe">
 
-  <div class="recipe__title">
-    <h1 class="page__title">{{ page.title }}</h1>
-  </div>
-
   <div class="recipe__media">
     <div class="recipe__image">
       <img src="{{ page.image }}" alt="">
@@ -15,6 +11,7 @@ comments: true
   </div><!--
 
   --><div class="recipe__body">
+    <h1 class="recipe__title">{{ page.title }}</h1>
     <div class="recipe__copy">
       {{ content }}
     </div>
@@ -56,9 +53,9 @@ comments: true
     </div>
 
     <div class="recipe__share">
-      <a href="http://www.facebook.com/sharer.php?u={{ site.url }}{{ page.url | absolute }}" target="_blank" rel="nofollow">Share on Facebook</a>
-      <a href='http://twitter.com/share?url={{ site.url }}{{ page.url }}&text={{ page.title }}&via={{ site.twitter_username }}' class='button'>Share on Twitter</a>
-      <a href="mailto:?subject={{ page.title }}&body={{ site.url }}{{ page.url }}">Share via Email</a>
+      <a href="http://www.facebook.com/sharer.php?u={{ site.url }}{{ page.url | absolute }}" target="_blank" rel="nofollow" class="btn">Share on Facebook</a>
+      <a href='http://twitter.com/share?url={{ site.url }}{{ page.url }}&text={{ page.title }}&via={{ site.twitter_username }}' class='btn'>Share on Twitter</a>
+      <a href="mailto:?subject={{ page.title }}&body={{ site.url }}{{ page.url }}" class="btn">Share via Email</a>
     </div>
 
     <div class="recipe__print">
@@ -70,10 +67,10 @@ comments: true
 
 <div class="recipe__navigation">
   {% if page.next.url %}
-    <a href="{{ page.next.url | relative_url }}" class="recipe__next">{{ page.next.title }}</a>
+    <a href="{{ page.next.url | relative_url }}" class="btn recipe__next">{{ page.next.title }}</a>
   {% endif %}
   {% if page.previous.url %}
-    <a href="{{ page.previous.url | relative_url}}" class="recipe__prev">{{ page.previous.title }}</a>
+    <a href="{{ page.previous.url | relative_url}}" class="btn recipe__prev">{{ page.previous.title }}</a>
   {% endif %}
 </div>
 
