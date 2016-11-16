@@ -8,29 +8,21 @@ prep: 10 mins
 cook: 12 mins
 serves: 3 large pancakes
 ingredients:
-  -
-    name: Spelt Flour
+  - name: Spelt Flour
     amount: 100g
-  -
-    name: Baking Powder
+  - name: Baking Powder
     amount: 1tsp
-  -
-    name: Milled Flaxseed
+  - name: Milled Flaxseed
     amount: 1tbsp
-  -
-    name: Rice Milk
+  - name: Rice Milk
     amount: 180ml
-  -
-    name: Vanilla Essence
+  - name: Vanilla Essence
     amount: 1/2tsp
-  -
-    name: Apple Cider Vinegar
+  - name: Apple Cider Vinegar
     amount: 1bsp
-  -
-    name: Liquid Sweetener (e.g. Maple Syrup, Date Syrup)
+  - name: Liquid Sweetener (e.g. Maple Syrup, Date Syrup)
     amount: 2tbsp
-  -
-    name: Dark Chocolate
+  - name: Dark Chocolate
     amount: 10g
 
 instructions:

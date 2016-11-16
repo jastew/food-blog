@@ -2,8 +2,9 @@
 
   <div class="container">
     <nav class="nav">
+      {% assign pages = site.pages | sort:"index" %}
       <ul class="nav__items">
-        {% for page in site.pages | sort:"index" %}
+        {% for page in pages %}
           {% if page.title %}
           <li class="nav__item">
             <a href="{{ page.url | relative_url }}" class="nav__link">{{ page.title }}</a>
@@ -18,5 +19,5 @@
     </div>
 
   </div>
-  
+
 </header>
