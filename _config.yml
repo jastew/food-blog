@@ -26,6 +26,7 @@ facebook_username: jastew
 
 # Build settings
 markdown: kramdown
+permalink: none
 defaults:
   -
     scope:

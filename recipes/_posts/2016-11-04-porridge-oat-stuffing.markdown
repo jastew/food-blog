@@ -8,18 +8,19 @@ prep: 5 mins
 cook: 40 mins
 serves: 3
 ingredients:
-  - name: porridge oats
-    amount: 100g
-  - name: white onion diced
-    amount: medium sized
-  - name: garlic
-    amount: 3 cloves
-  - name: sage
-    amount: 2tsp
-  - name: vegetable stock
-    amount: 200ml
-  - name: water
-    amount: 1tbsp
+  - items:
+    - name: porridge oats
+      amount: 100g
+    - name: white onion diced
+      amount: medium sized
+    - name: garlic
+      amount: 3 cloves
+    - name: sage
+      amount: 2tsp
+    - name: vegetable stock
+      amount: 200ml
+    - name: water
+      amount: 1tbsp
 instructions:
   - Add the water to a hot pan (use oil if prefered)
   - Add the diced onion and stir

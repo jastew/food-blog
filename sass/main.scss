@@ -173,6 +173,11 @@ img {
   li {
     margin-bottom: 0.5rem;
   }
+
+  &__info {
+    // display: inline-block;
+    // margin: 0 1rem 0.5rem 0;
+  }
 }
 .recipe__title {
   margin: 0 0 0.25rem;
@@ -248,15 +253,38 @@ img {
   /*padding: 0;
   margin: 0;
   list-style-type: none;*/
+
+  &__title {
+    margin: 0 0 0.5rem;
+  }
+
+  &__groups {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  &__group {
+    list-style-type: none;
+    margin-bottom: 1rem;
+
+    &-title {
+      margin: 0 0 0.5rem;
+    }
+  }
 }
-.ingredients__item {
+.ingredients__items {
+  overflow: hidden;
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
   /*border-bottom: 1px solid #eee;*/
   /*margin-bottom: 0.5rem;*/
 }
-.ingredients__name {
+
+.ingredient__name {
   /*font-weight: bold;*/
 }
-.ingredients__amount {
+.ingredient__amount {
   float: right;
   clear: right;
   display: inline-block;

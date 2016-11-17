@@ -8,22 +8,32 @@ prep: 10 mins
 cook: 12 mins
 serves: 3 large pancakes
 ingredients:
-  - name: Spelt Flour
-    amount: 100g
-  - name: Baking Powder
-    amount: 1tsp
-  - name: Milled Flaxseed
-    amount: 1tbsp
-  - name: Rice Milk
-    amount: 180ml
-  - name: Vanilla Essence
-    amount: 1/2tsp
-  - name: Apple Cider Vinegar
-    amount: 1bsp
-  - name: Liquid Sweetener (e.g. Maple Syrup, Date Syrup)
-    amount: 2tbsp
-  - name: Dark Chocolate
-    amount: 10g
+  - group_name: Dry
+    items:
+    - name: Spelt Flour
+      amount: 100g
+    - name: Baking Powder
+      amount: 1tsp
+    - name: Milled Flaxseed
+      amount: 1tbsp
+  - group_name: Wet
+    items:
+    - name: Rice Milk
+      amount: 180ml
+    - name: Vanilla Essence
+      amount: 1/2tsp
+    - name: Apple Cider Vinegar
+      amount: 1bsp
+    - name: Liquid Sweetener (e.g. Maple Syrup, Date Syrup)
+      amount: 2tbsp
+  - group_name: Toppings
+    items:
+    - name: Dark Chocolate
+      amount: 10g
+  - group_name: Cooking
+    items:
+    - name: Oil
+      amount: 1tbsp
 
 instructions:
   - Combine and mix well the spelt flour, flaxseed and baking powder
@@ -33,3 +43,4 @@ instructions:
   - Flip the pancake when bubbles appear in the centre of the pancake.
   - Once flipped...
 ---
+That special treat for the weekends

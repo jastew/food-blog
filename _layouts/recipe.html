@@ -16,30 +16,40 @@ comments: true
       {{ content }}
     </div>
 
-    <div class="recipe__time">
-      {% if page.prep %}
-      <p class="recipe__prep"><strong>Prep time</strong> {{ page.prep }}</p>
-      {% endif %}
-      {% if page.cook %}
-      <p class="recipe__cooking"><strong>Cook time</strong> {{ page.cook }}</p>
-      {% endif %}
-    </div>
-
+    {% if page.prep %}
+    <p class="recipe__info recipe__info--prep"><strong>Prep time</strong> {{ page.prep }}</p>
+    {% endif %}
+    {% if page.cook %}
+    <p class="recipe__info recipe__info--cooking"><strong>Cook time</strong> {{ page.cook }}</p>
+    {% endif %}
     {% if page.serves %}
-    <p class="recipe__serves"><strong>Serves</strong> {{ page.serves }}</p>
+    <p class="recipe__info recipe__info--serves"><strong>Serves</strong> {{ page.serves }}</p>
     {% endif %}
 
     <div class="recipe__ingredients">
-      <h2>Ingredients</h2>
-      <ul class="ingredients">
-        {% for ingredient in page.ingredients %}
-          <li class="ingredients__item">
-            <div class="ingredient">
-              <span class="ingredients__amount">{{ ingredient.amount }}</span>
-              <span class="ingredients__name">{{ ingredient.name }}</span>
-            </div>
+      <h2 class="ingredients__title">Ingredients</h2>
+      {% if page.ingredients.size > 1 %}
+        <ul class="ingredients__groups">
+      {% endif %}
+      {% for ingredient_group in page.ingredients %}
+          <li class="ingredients__group">
+            {% if ingredient_group.group_name %}
+            <h3 class="ingredients__group-title">{{ ingredient_group.group_name }}</h3>
+            {% endif %}
+            <ul class="ingredients__items">
+              {% for ingredient in ingredient_group.items %}
+                <li class="ingredients__item">
+                  <div class="ingredient">
+                    <span class="ingredient__amount">{{ ingredient.amount }}</span>
+                    <span class="ingredient__name">{{ ingredient.name }}</span>
+                  </div>
+                </li>
+              {% endfor %}
+            </ul>
+        {% if page.ingredients.size > 1 %}
           </li>
-        {% endfor %}
+        {% endif %}
+      {% endfor %}
       </ul>
     </div><!--
 
