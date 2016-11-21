@@ -6,7 +6,7 @@ category: Dinner
 image: https://scontent-lhr3-1.cdninstagram.com/t51.2885-15/e35/13687144_1259426290748196_532363803_n.jpg?ig_cache_key=MTMzMzUxOTE3ODE3MDMwNTEwMQ%3D%3D.2
 prep: 5 mins
 cook: 40 mins
-serves: 3
+serves: 4
 ingredients:
   - items:
     - name: porridge oats

@@ -18,7 +18,7 @@ ingredients:
     - name: Liquid Sweetener (e.g. Maple Syrup, Data Syrup)
       amount: 15g
 instructions:
-  - Combine the oats, milk, cacao powder and liquid sweetener and leave to soak overnight in the fridge
-  - Add the puffed rice and mix through
+  - Combine the oats, milk, cacao powder and liquid sweetener and leave to soak overnight in the fridge.
+  - Add the puffed rice and mix through.
   - Enjoy! :)
 ---
