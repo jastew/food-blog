@@ -2,28 +2,28 @@
 layout: default
 comments: true
 ---
-<div class="recipe">
+<div class="recipe" itemscope itemtype="http://schema.org/Recipe">
 
   <div class="recipe__media">
     <div class="recipe__image">
-      <img src="{{ page.image }}" alt="">
+      <img src="{{ page.image }}" alt="Image of recipe" itemprop="image">
     </div>
   </div><!--
 
   --><div class="recipe__body">
-    <h1 class="recipe__title">{{ page.title }}</h1>
-    <div class="recipe__copy">
+    <h1 class="recipe__title"><span itemprop="name">{{ page.title }}</span></h1>
+    <div class="recipe__copy" itemprop="description">
       {{ content }}
     </div>
 
     {% if page.prep %}
-    <p class="recipe__info recipe__info--prep"><strong>Prep time</strong> {{ page.prep }}</p>
+    <p class="recipe__info recipe__info--prep"><strong>Prep time</strong>{{ page.prep }}</p>
     {% endif %}
     {% if page.cook %}
     <p class="recipe__info recipe__info--cooking"><strong>Cook time</strong> {{ page.cook }}</p>
     {% endif %}
     {% if page.serves %}
-    <p class="recipe__info recipe__info--serves"><strong>Serves</strong> {{ page.serves }}</p>
+    <p class="recipe__info recipe__info--serves"><strong>Serves</strong> <span class="recipeYield">{{ page.serves }}</span></p>
     {% endif %}
 
     <div class="recipe__ingredients">
@@ -39,7 +39,7 @@ comments: true
             <ul class="ingredients__items">
               {% for ingredient in ingredient_group.items %}
                 <li class="ingredients__item">
-                  <div class="ingredient">
+                  <div class="ingredient" itemprop="recipeIngredient">
                     <span class="ingredient__amount">{{ ingredient.amount }}</span>
                     <span class="ingredient__name">{{ ingredient.name }}</span>
                   </div>
@@ -55,7 +55,7 @@ comments: true
 
     --><div class="recipe__instructions">
       <h2>Instructions</h2>
-      <ol>
+      <ol itemprop="recipeInstructions">
         {% for instruction in page.instructions %}
           <li>{{ instruction }}</li>
         {% endfor %}
