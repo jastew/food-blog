@@ -3,7 +3,8 @@ layout: recipe
 title:  Grown Up Coco Pops
 date:   2016-11-04 18:55:36 +0000
 category: Breakfast
-image: https://scontent-lhr3-1.cdninstagram.com/t51.2885-15/e35/14052602_1608679332764929_461815434_n.jpg?ig_cache_key=MTMzMzkyNjg3NDM1ODg3OTc1NA%3D%3D.2
+description: Feel like a kid again with a filling and nutritional bowl of grown up coco pops
+image: https://lh3.googleusercontent.com/esLIussRDo4a4opKTIxyIZmF5cuzNQaxE2j2oYaWzUqWM5d5ij2KM55CQOq1qrIEdk1RSl19oA=s962-no
 prep: 5 mins
 ingredients:
   - items:

@@ -1,3 +1,19 @@
 <title>{{ site.title }}</title>
-<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+<meta name="viewport" content="width=device--width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+{% if page.title %}
+<meta property="og:title" content="{{ page.title }}">
+{% endif %}
+
+{% if page.type %}
+<meta property="og:type" content="{{ page.type }}">
+{% endif %}
+
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+
+{% if page.image %}
+<meta property="og:image" content="{{ page.image }}">
+{% endif %}
+
 <link rel="stylesheet" href="{{ '/css/main.css' | relative_url }}">

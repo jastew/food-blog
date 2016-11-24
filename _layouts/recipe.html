@@ -2,7 +2,21 @@
 layout: default
 comments: true
 ---
+{% assign author = site.data.authors[page.author] %}
 <div class="recipe" itemscope itemtype="http://schema.org/Recipe">
+  <div class="recipe__head">
+    <h1 class="recipe__title"><span itemprop="name">{{ page.title }}</span></h1>
+
+    <div class="recipe__share">
+      <a href="http://www.facebook.com/sharer.php?u={{ site.url }}{{ page.url | absolute }}" target="_blank" rel="nofollow" class="btn">Share on Facebook</a>
+      <a href='http://twitter.com/share?url={{ site.url }}{{ page.url }}&text={{ page.title }}&via={{ site.twitter_username }}' class='btn'>Share on Twitter</a>
+      <a href="mailto:?subject={{ page.title }}&body={{ site.url }}{{ page.url }}" class="btn">Share via Email</a>
+    </div>
+
+    <div class="recipe__print">
+      <a href="#" class="btn" onclick="window.print()">Print Recipe</a>
+    </div>
+  </div>
 
   <div class="recipe__media">
     <div class="recipe__image">
@@ -10,14 +24,13 @@ comments: true
     </div>
   </div><!--
 
-  --><div class="recipe__body">
-    <h1 class="recipe__title"><span itemprop="name">{{ page.title }}</span></h1>
+--><div class="recipe__body">
     <div class="recipe__copy" itemprop="description">
       {{ content }}
     </div>
 
     {% if page.prep %}
-    <p class="recipe__info recipe__info--prep"><strong>Prep time</strong>{{ page.prep }}</p>
+    <p class="recipe__info recipe__info--prep"><strong>Prep time</strong> {{ page.prep }}</p>
     {% endif %}
     {% if page.cook %}
     <p class="recipe__info recipe__info--cooking"><strong>Cook time</strong> {{ page.cook }}</p>
@@ -62,17 +75,19 @@ comments: true
       </ol>
     </div>
 
-    <div class="recipe__share">
-      <a href="http://www.facebook.com/sharer.php?u={{ site.url }}{{ page.url | absolute }}" target="_blank" rel="nofollow" class="btn">Share on Facebook</a>
-      <a href='http://twitter.com/share?url={{ site.url }}{{ page.url }}&text={{ page.title }}&via={{ site.twitter_username }}' class='btn'>Share on Twitter</a>
-      <a href="mailto:?subject={{ page.title }}&body={{ site.url }}{{ page.url }}" class="btn">Share via Email</a>
-    </div>
 
-    <div class="recipe__print">
-      <a href="#" class="btn" onclick="window.print()">Print Recipe</a>
-    </div>
 
   </div>
+
+  <div class="recipe__author">
+    <h4 class="recipe__author-title">Author</h4>
+    <div class="recipe__author-image"><img src="{{ author.image }}" alt=""></div>
+    <div class="recipe__author-body">
+      <p class="recipe__author-name"><strong>{{ author.name }}</strong></p>
+      <p class="recipe__author-bio">{{ author.bio }}</p>
+    </div>
+  </div>
+
 </div>
 
 <div class="recipe__navigation">
