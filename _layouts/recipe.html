@@ -6,16 +6,6 @@ comments: true
 <div class="recipe" itemscope itemtype="http://schema.org/Recipe">
   <div class="recipe__head">
     <h1 class="recipe__title"><span itemprop="name">{{ page.title }}</span></h1>
-
-    <div class="recipe__share">
-      <a href="http://www.facebook.com/sharer.php?u={{ site.url }}{{ page.url | absolute }}" target="_blank" rel="nofollow" class="btn">Share on Facebook</a>
-      <a href='http://twitter.com/share?url={{ site.url }}{{ page.url }}&text={{ page.title }}&via={{ site.twitter_username }}' class='btn'>Share on Twitter</a>
-      <a href="mailto:?subject={{ page.title }}&body={{ site.url }}{{ page.url }}" class="btn">Share via Email</a>
-    </div>
-
-    <div class="recipe__print">
-      <a href="#" class="btn" onclick="window.print()">Print Recipe</a>
-    </div>
   </div>
 
   <div class="recipe__media">
@@ -30,13 +20,13 @@ comments: true
     </div>
 
     {% if page.prep %}
-    <p class="recipe__info recipe__info--prep"><strong>Prep time</strong> {{ page.prep }}</p>
+    <p class="recipe__info recipe__info--prep"><i class="fa fa-fw fa-clock-o"></i> <strong>Prep time</strong> {{ page.prep }}</p>
     {% endif %}
     {% if page.cook %}
-    <p class="recipe__info recipe__info--cooking"><strong>Cook time</strong> {{ page.cook }}</p>
+    <p class="recipe__info recipe__info--cooking"><i class="fa fa-fw fa-clock-o"></i> <strong>Cook time</strong> {{ page.cook }}</p>
     {% endif %}
     {% if page.serves %}
-    <p class="recipe__info recipe__info--serves"><strong>Serves</strong> <span class="recipeYield">{{ page.serves }}</span></p>
+    <p class="recipe__info recipe__info--serves"><i class="fa fa-fw fa-cutlery"></i> <strong>Serves</strong> <span class="recipeYield">{{ page.serves }}</span></p>
     {% endif %}
 
     <div class="recipe__ingredients">
@@ -77,6 +67,20 @@ comments: true
 
 
 
+  </div>
+
+  <div class="recipe__cta">
+    <div class="recipe__share">
+      <span>Share Recipe</span>
+      <a href="http://www.facebook.com/sharer.php?u={{ site.url }}{{ page.url | absolute }}" target="_blank" rel="nofollow" class="btn btn--icon btn--facebook"><i class="fa fa-fw fa-facebook"></i></a>
+      <a href='http://twitter.com/share?url={{ site.url }}{{ page.url }}&text={{ page.title }}&via={{ site.twitter_username }}' class="btn btn--icon btn--twitter"><i class="fa fa-fw fa-twitter"></i></a>
+      <a href="mailto:?subject={{ page.title }}&body={{ site.url }}{{ page.url }}" class="btn btn--icon btn--email"><i class="fa fa-fw fa-envelope text-email"></i></a>
+    </div>
+
+    <div class="recipe__print">
+      <span>Print Recipe</span>
+      <a href="#" class="btn btn--icon btn--print" onclick="window.print()"><i class="fa fa-fw fa-print"></i></a>
+    </div>
   </div>
 
   <div class="recipe__author">

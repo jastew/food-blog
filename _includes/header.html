@@ -6,18 +6,20 @@
       <h1>{{ site.title }}</h1>
     </div>
 
-    <nav class="nav">
-      {% assign pages = site.pages | sort:"index" %}
-      <ul class="nav__items">
-        {% for page in pages %}
-          {% if page.title %}
-          <li class="nav__item">
-            <a href="{{ page.url | relative_url }}" class="nav__link">{{ page.title }}</a>
-          </li>
-          {% endif %}
-        {% endfor %}
-      </ul>
-    </nav>
+    <div class="header__nav">
+      <nav class="nav">
+        {% assign pages = site.pages | sort:"index" %}
+        <ul class="nav__items">
+          {% for page in pages %}
+            {% if page.title %}
+            <li class="nav__item">
+              <a href="{{ page.url | relative_url }}" class="nav__link">{{ page.title }}</a>
+            </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </nav>
+    </div>
 
   </div>
 
