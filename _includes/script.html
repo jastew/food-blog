@@ -1,0 +1,9 @@
+<script>
+  var nav = document.getElementsByClassName('js-nav')[0],
+      nav_toggle = document.getElementsByClassName('js-nav-toggle')[0];
+
+  nav_toggle.onclick = function(evt) {
+    evt.preventDefault();
+    nav.classList.toggle('is-active');
+  }
+</script>

@@ -1,0 +1,39 @@
+.header {
+  overflow: hidden;
+  text-align: center;
+  color: #333;
+
+  &__brand {
+    margin: 0;
+  }
+
+  &__title {
+    float: left;
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+
+  &__nav {
+    float: right;
+    margin-top: 1rem;
+
+    &-toggle {
+      position: relative;
+      z-index: 9999;
+      display: none;
+      margin-top: 0.5rem;
+
+      @media (max-width: 700px) {
+        display: block;
+      }
+    }
+  }
+
+  @media print {
+    display: none;
+  }
+
+}

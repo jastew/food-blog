@@ -1,0 +1,32 @@
+.btn {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0.5em;
+  text-decoration: none !important;
+  background: #eee;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  color: #000;
+
+  &:hover {
+    background: #e8e8e8;
+  }
+
+  &--icon {
+    background: none;
+    border: none;
+  }
+
+  &--facebook {
+    color: #3b5998;
+  }
+  &--twitter {
+    color: #4099FF;
+  }
+  &--email {
+    color: #c5b08d;
+  }
+  &--print {
+    color: #888;
+  }
+}

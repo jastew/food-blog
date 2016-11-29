@@ -2,7 +2,6 @@
 layout: default
 comments: true
 ---
-{% assign author = site.data.authors[page.author] %}
 <div class="recipe" itemscope itemtype="http://schema.org/Recipe">
   <div class="recipe__head">
     <h1 class="recipe__title"><span itemprop="name">{{ page.title }}</span></h1>
@@ -19,78 +18,39 @@ comments: true
       {{ content }}
     </div>
 
-    {% if page.prep %}
-    <p class="recipe__info recipe__info--prep"><i class="fa fa-fw fa-clock-o"></i> <strong>Prep time</strong> {{ page.prep }}</p>
-    {% endif %}
-    {% if page.cook %}
-    <p class="recipe__info recipe__info--cooking"><i class="fa fa-fw fa-clock-o"></i> <strong>Cook time</strong> {{ page.cook }}</p>
-    {% endif %}
-    {% if page.serves %}
-    <p class="recipe__info recipe__info--serves"><i class="fa fa-fw fa-cutlery"></i> <strong>Serves</strong> <span class="recipeYield">{{ page.serves }}</span></p>
-    {% endif %}
-
-    <div class="recipe__ingredients">
-      <h2 class="ingredients__title">Ingredients</h2>
-      {% if page.ingredients.size > 1 %}
-        <ul class="ingredients__groups">
+    <div class="recipe__info">
+      {% if page.prep %}
+      <p class="recipe__info-item recipe__info-item--prep"><i class="fa fa-fw fa-clock-o"></i> <strong>Prep time</strong> {{ page.prep }}</p>
       {% endif %}
-      {% for ingredient_group in page.ingredients %}
-          <li class="ingredients__group">
-            {% if ingredient_group.group_name %}
-            <h3 class="ingredients__group-title">{{ ingredient_group.group_name }}</h3>
-            {% endif %}
-            <ul class="ingredients__items">
-              {% for ingredient in ingredient_group.items %}
-                <li class="ingredients__item">
-                  <div class="ingredient" itemprop="recipeIngredient">
-                    <span class="ingredient__amount">{{ ingredient.amount }}</span>
-                    <span class="ingredient__name">{{ ingredient.name }}</span>
-                  </div>
-                </li>
-              {% endfor %}
-            </ul>
-        {% if page.ingredients.size > 1 %}
-          </li>
-        {% endif %}
-      {% endfor %}
-      </ul>
-    </div><!--
-
-    --><div class="recipe__instructions">
-      <h2>Instructions</h2>
-      <ol itemprop="recipeInstructions">
-        {% for instruction in page.instructions %}
-          <li>{{ instruction }}</li>
-        {% endfor %}
-      </ol>
+      {% if page.cook %}
+      <p class="recipe__info-item recipe__info-item--cooking"><i class="fa fa-fw fa-clock-o"></i> <strong>Cook time</strong> {{ page.cook }}</p>
+      {% endif %}
+      {% if page.serves %}
+      <p class="recipe__info-item recipe__info-item--serves"><i class="fa fa-fw fa-cutlery"></i> <strong>Serves</strong> <span class="recipeYield">{{ page.serves }}</span></p>
+      {% endif %}
     </div>
 
+    {% include recipes/ingredients.html %}
 
+    {% include recipes/instructions.html %}
 
   </div>
 
   <div class="recipe__cta">
     <div class="recipe__share">
-      <span>Share Recipe</span>
       <a href="http://www.facebook.com/sharer.php?u={{ site.url }}{{ page.url | absolute }}" target="_blank" rel="nofollow" class="btn btn--icon btn--facebook"><i class="fa fa-fw fa-facebook"></i></a>
       <a href='http://twitter.com/share?url={{ site.url }}{{ page.url }}&text={{ page.title }}&via={{ site.twitter_username }}' class="btn btn--icon btn--twitter"><i class="fa fa-fw fa-twitter"></i></a>
       <a href="mailto:?subject={{ page.title }}&body={{ site.url }}{{ page.url }}" class="btn btn--icon btn--email"><i class="fa fa-fw fa-envelope text-email"></i></a>
+      <span>Share Recipe</span>
     </div>
 
     <div class="recipe__print">
-      <span>Print Recipe</span>
       <a href="#" class="btn btn--icon btn--print" onclick="window.print()"><i class="fa fa-fw fa-print"></i></a>
+      <span>Print&nbsp;Recipe</span>
     </div>
   </div>
 
-  <div class="recipe__author">
-    <h4 class="recipe__author-title">Author</h4>
-    <div class="recipe__author-image"><img src="{{ author.image }}" alt=""></div>
-    <div class="recipe__author-body">
-      <p class="recipe__author-name"><strong>{{ author.name }}</strong></p>
-      <p class="recipe__author-bio">{{ author.bio }}</p>
-    </div>
-  </div>
+  {% include recipes/author.html %}
 
 </div>
 

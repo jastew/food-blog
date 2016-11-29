@@ -1,0 +1,26 @@
+<div class="recipe__ingredients">
+  <h2 class="ingredients__title">Ingredients</h2>
+  {% if page.ingredients.size > 1 %}
+    <ul class="ingredients__groups">
+  {% endif %}
+  {% for ingredient_group in page.ingredients %}
+      <li class="ingredients__group">
+        {% if ingredient_group.group_name %}
+        <h3 class="ingredients__group-title">{{ ingredient_group.group_name }}</h3>
+        {% endif %}
+        <ul class="ingredients__items">
+          {% for ingredient in ingredient_group.items %}
+            <li class="ingredients__item">
+              <div class="ingredient" itemprop="recipeIngredient">
+                <span class="ingredient__amount">{{ ingredient.amount }}</span>
+                <span class="ingredient__name">{{ ingredient.name }}</span>
+              </div>
+            </li>
+          {% endfor %}
+        </ul>
+    {% if page.ingredients.size > 1 %}
+      </li>
+    {% endif %}
+  {% endfor %}
+  </ul>
+</div>

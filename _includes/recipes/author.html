@@ -1,0 +1,10 @@
+{% assign author = site.data.authors[page.author] %}
+
+<div class="recipe__author">
+  <div class="recipe__author-image"><img src="{{ author.image }}" alt=""></div>
+  <div class="recipe__author-body">
+    <h4 class="recipe__author-title">Written By</h4>
+    <p class="recipe__author-name"><strong>{{ author.name }}</strong></p>
+    <p class="recipe__author-copy">{{ author.bio }}</p>
+  </div>
+</div>

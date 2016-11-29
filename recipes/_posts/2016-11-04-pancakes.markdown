@@ -24,7 +24,7 @@ ingredients:
     - name: Vanilla Essence
       amount: 1/2tsp
     - name: Apple Cider Vinegar
-      amount: 1bsp
+      amount: 1tsp
     - name: Liquid Sweetener (e.g. Maple Syrup, Date Syrup)
       amount: 2tbsp
   - group_name: Toppings

@@ -1,0 +1,8 @@
+<div class="recipe__instructions">
+  <h2>Instructions</h2>
+  <ol itemprop="recipeInstructions">
+    {% for instruction in page.instructions %}
+      <li>{{ instruction }}</li>
+    {% endfor %}
+  </ol>
+</div>
