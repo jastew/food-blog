@@ -39,11 +39,8 @@ gulp.task('watch', function () {
     ], ['css']);
 
   gulp.watch([
-    '*.html',
-    '_layouts/*.html',
-    '_recipes/**/*.html',
-    '_includes/*.html',
-    '_posts/*'
+    './**/*.html',
+    '!./_site/**/*.html',
   ], ['jekyll-rebuild']);
 });
 
