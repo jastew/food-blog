@@ -1,0 +1,84 @@
+---
+layout: default
+title: Search
+index: 9
+---
+<h1>Search Recipes</h1>
+<div class="search-box">
+  <label for="search" class="search-box__label">Search</label>
+  <div class="search-box__input">
+    <input type="text" placeholder="e.g. maple syup, breakfast" id="search" class="search-box__input">
+  </div>
+  <button type="submit" class="search-box__btn">Search</button>
+</div>
+
+<ul id="search_container" class="search-results">
+  <!-- Search Results go Here -->
+</ul>
+
+<script>
+
+(function () {
+  // Store data for the recipes
+  var recipes = [
+    {% for post in site.posts %}
+      {
+        title: "{{ post.title }}",
+        description: "{{ post.description }}",
+        url: "{{ post.url | relative_url }}",
+        category: "{{ post.category }}",
+        ingredients: "{{ post.ingredients | map: 'items' | map: 'name' | join: ', ' }}",
+      },
+    {% endfor %}
+  ];
+  // Store the HTML of search results
+  var html = '';
+  // Get the input for searching
+  var search_input = document.getElementById('search');
+  // Get the container for search results
+  var search_container = document.getElementById('search_container');
+
+  // Loop through the recipes and find one that matches search term
+  function search() {
+    // Clear the html
+    html = '';
+    // Get the search term
+    var search_value = search_input.value.trim();
+
+    // If search term isn't blank
+    if (search_value) {
+      // Loop through the recipes
+      for (var i = 0; i < recipes.length; i++) {
+        var recipe = recipes[i];
+        // User regular expressions to find search term in string
+        var regexp = new RegExp(search_value, 'gi');
+        // Find a recipe that matches the search term
+        if (regexp.test(recipe.title + recipe.category + recipe.ingredients)) {
+          renderRecipe(recipe, search_value);
+        }
+      }
+    }
+    // Show the search results on the page
+    search_container.innerHTML = html;
+  }
+
+  // Create HTML for the search results
+  function renderRecipe(recipe, search) {
+    html += '<li class="search-results__item">';
+    html +=    '<h3 class="search-results__title">';
+    html +=      '<a href="' + recipe.url + '" class="search-results__link">' + recipe.title + '</a>';
+    html +=    '</h3>';
+    html +=    '<p class="search-results__copy">' + recipe.description + '</p>';
+    html +=    '<p class="search-results__ingredients"><strong>Ingredients: </strong>' + recipe.ingredients + '</p>';
+    html += '</li>';
+  }
+
+  // Listen for a search
+  search_input.addEventListener('change', search, false);
+
+  // Run Search incase input has a value by default
+  search();
+
+})();
+
+</script>
