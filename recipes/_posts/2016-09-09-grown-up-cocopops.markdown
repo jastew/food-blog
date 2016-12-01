@@ -16,7 +16,7 @@ ingredients:
       amount: 300ml
     - name: Cacao Powder
       amount: 2tsp
-    - name: Liquid Sweetener (e.g. Maple Syrup, Data Syrup)
+    - name: Maple Syrup
       amount: 15g
 instructions:
   - Combine the oats, milk, cacao powder and liquid sweetener and leave to soak overnight in the fridge.
