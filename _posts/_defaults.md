@@ -9,7 +9,7 @@ serves: ''
 ingredient-groups:
   - group_name: ''
     ingredients:
-      - name: ''
+      - ingredient: ''
         amount: ''
 instructions:
   -
