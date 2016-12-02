@@ -1,4 +1,6 @@
 ---
 layout: ingredient
-name: Vanilla Esscence
+name: Vanilla Essence
 ---
+
+
