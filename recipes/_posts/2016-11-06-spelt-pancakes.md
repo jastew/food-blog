@@ -1,5 +1,6 @@
 ---
 title: Spelt Pancakes
+author: jason
 category:
   - Breakfast
 description: Tasty treat to kick start your mornings
