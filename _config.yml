@@ -28,6 +28,9 @@ facebook_username: jastew
 markdown: kramdown
 permalink: none
 collections:
+  category:
+    output: true
+    path: "categories"
   ingredient:
     output: true
     path: "ingredients"
