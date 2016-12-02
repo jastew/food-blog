@@ -1,5 +1,4 @@
 ---
-layout: recipe
 title:  Fruity Spinach Smoothie
 date:   2016-11-24 18:55:36 +0000
 category: Breakfast

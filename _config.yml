@@ -27,14 +27,25 @@ facebook_username: jastew
 # Build settings
 markdown: kramdown
 permalink: none
+collections:
+  ingredients:
+    output: true
+    path: "ingredients"
 defaults:
   -
     scope:
       path: "recipes"
     values:
+      layout: recipe
       comments: true
       type: article
       author: jason
+  -
+    scope:
+      path: "ingredients"
+    values:
+      layout: ingredient
+      comments: true
 gems:
   - jekyll-feed
 exclude:

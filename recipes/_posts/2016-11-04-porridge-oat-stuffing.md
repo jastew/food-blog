@@ -1,8 +1,6 @@
 ---
-layout: recipe
 title:  "Porridge Oat Stuffing"
 date:   2016-11-04 18:55:36 +0000
-author: jason
 category: Dinner
 description: Simple, filling and best of all delicious!
 image: https://lh3.googleusercontent.com/Pt2gyNVUbfM8GO71_gNYyAIACL2-9iwNP7zlaC6OfQYClmnVNQsUqvZW2GK4cZ4erzCHkMgXRA=s962-no

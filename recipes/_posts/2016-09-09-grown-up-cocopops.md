@@ -1,5 +1,4 @@
 ---
-layout: recipe
 title:  Grown Up Coco Pops
 date:   2016-11-04 18:55:36 +0000
 category: Breakfast

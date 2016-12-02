@@ -1,13 +1,13 @@
 ---
 layout: default
 title: Search
-index: 9
+menu_index: 9
 ---
 <h1>Search Recipes</h1>
 <div class="search-box">
   <label for="search" class="search-box__label">Search</label>
   <div class="search-box__input">
-    <input type="text" placeholder="e.g. maple syup, breakfast" id="search" class="search-box__input">
+    <input type="search" placeholder="e.g. maple syup, breakfast" id="search" class="search-box__input">
   </div>
   <button type="submit" class="search-box__btn">Search</button>
 </div>
@@ -38,12 +38,18 @@ index: 9
   // Get the container for search results
   var search_container = document.getElementById('search_container');
 
+  function getSearch() {
+    return search_input.value.trim();
+  }
+
   // Loop through the recipes and find one that matches search term
   function search() {
     // Clear the html
     html = '';
+    // Set the the success to false
+    var search_success = false;
     // Get the search term
-    var search_value = search_input.value.trim();
+    var search_value = getSearch();
 
     // If search term isn't blank
     if (search_value) {
@@ -54,8 +60,14 @@ index: 9
         var regexp = new RegExp(search_value, 'gi');
         // Find a recipe that matches the search term
         if (regexp.test(recipe.title + recipe.category + recipe.ingredients)) {
+          // Successfully found a recipe
+          search_success = true;
           renderRecipe(recipe, search_value);
         }
+      }
+      // If we didn't find a recipe
+      if (!search_success) {
+        html += '<p>Sorry we couldn\'t find any recipes when searching for "<strong>' + search_value + '</strong>"</p>';
       }
     }
     // Show the search results on the page
@@ -70,6 +82,7 @@ index: 9
     html +=    '<h3 class="search-results__title">';
     html +=      '<a href="' + recipe.url + '" class="search-results__link">' + recipe.title + '</a>';
     html +=    '</h3>';
+    html +=    '<p><small>' + recipe.category + '</small></p>';
     html +=    '<p class="search-results__copy">' + recipe.description + '</p>';
     html +=    '<p class="search-results__ingredients"><strong>Ingredients: </strong>' + recipe.ingredients + '</p>';
     html += '</li>';
@@ -78,8 +91,14 @@ index: 9
   // Listen for a search
   search_input.addEventListener('change', search, false);
 
-  // Run Search incase input has a value by default
-  search();
+  // If the input is populated on page load
+  if (getSearch()) {
+    // Run Search incase input has a value by default
+    search();
+  } else {
+    // Focus on search
+    search_input.focus();
+  }
 
 })();
 

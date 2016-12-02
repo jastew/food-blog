@@ -1,8 +1,8 @@
 ---
 layout: default
-comments: true
 ---
 <div class="recipe" itemscope itemtype="http://schema.org/Recipe">
+
   <div class="recipe__head">
     <h1 class="recipe__title"><span itemprop="name">{{ page.title }}</span></h1>
   </div>
@@ -37,31 +37,18 @@ comments: true
   </div>
 
   <div class="recipe__cta">
-    <div class="recipe__share">
-      <a href="http://www.facebook.com/sharer.php?u={{ site.url }}{{ page.url | absolute }}" target="_blank" rel="nofollow" class="btn btn--icon btn--facebook"><i class="fa fa-fw fa-facebook"></i></a>
-      <a href='http://twitter.com/share?url={{ site.url }}{{ page.url }}&text={{ page.title }}&via={{ site.twitter_username }}' class="btn btn--icon btn--twitter"><i class="fa fa-fw fa-twitter"></i></a>
-      <a href="mailto:?subject={{ page.title }}&body={{ site.url }}{{ page.url }}" class="btn btn--icon btn--email"><i class="fa fa-fw fa-envelope text-email"></i></a>
-      <span>Share Recipe</span>
-    </div>
 
-    <div class="recipe__print">
-      <a href="#" class="btn btn--icon btn--print" onclick="window.print()"><i class="fa fa-fw fa-print"></i></a>
-      <span>Print&nbsp;Recipe</span>
-    </div>
+    {% include recipes/share.html %}
+
+    {% include recipes/print.html %}
+
   </div>
 
   {% include recipes/author.html %}
 
 </div>
 
-<div class="recipe__navigation">
-  {% if page.next.url %}
-    <a href="{{ page.next.url | relative_url }}" class="btn recipe__next">{{ page.next.title }}</a>
-  {% endif %}
-  {% if page.previous.url %}
-    <a href="{{ page.previous.url | relative_url}}" class="btn recipe__prev">{{ page.previous.title }}</a>
-  {% endif %}
-</div>
+{% include recipes/navigation.html %}
 
 {% if page.comments %}
   <div class="recipe__comments">

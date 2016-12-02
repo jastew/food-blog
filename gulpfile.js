@@ -40,6 +40,7 @@ gulp.task('watch', function () {
 
   gulp.watch([
     './**/*.html',
+    './**/*.md',
     '!./_site/**/*.html',
   ], ['jekyll-rebuild']);
 });

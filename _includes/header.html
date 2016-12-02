@@ -12,7 +12,7 @@
       </div>
 
       <nav class="nav js-nav">
-        {% assign pages = site.pages | sort:"index" %}
+        {% assign pages = site.pages | sort:"menu_index" %}
         <ul class="nav__items">
           {% for page in pages %}
             {% if page.title %}
