@@ -6,9 +6,9 @@ image: ''
 prep: ''
 cook: ''
 serves: ''
-testing:
+ingredient-groups:
   - group_name: ''
-    items:
+    ingredients:
       - name: ''
         amount: ''
 instructions:
