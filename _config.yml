@@ -28,7 +28,7 @@ facebook_username: jastew
 markdown: kramdown
 permalink: none
 collections:
-  ingredients:
+  ingredient:
     output: true
     path: "ingredients"
 defaults:
