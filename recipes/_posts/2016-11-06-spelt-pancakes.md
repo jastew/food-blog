@@ -1,6 +1,6 @@
 ---
 title: Spelt Pancakes
-author: jason
+author:
 category:
   - Breakfast
 description: Tasty treat to kick start your mornings
@@ -40,5 +40,7 @@ instructions:
   - Add a small amount of oil to the a pan on a medium heated pan.
   - Add the batter to the pan.
   - When bubbles appear in the center of the pancake it is time to flip.
-  - Once cooked to your liking top with your favourite toppings. I like to use maple syrup and dark chocolate. :)
+  - 'Once cooked to your liking top with your favourite toppings. I like to use maple syrup and dark chocolate. :)'
 ---
+
+
