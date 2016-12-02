@@ -6,7 +6,7 @@ image: ''
 prep: ''
 cook: ''
 serves: ''
-ingredients:
+testing:
   - group_name: ''
     items:
       - name: ''
