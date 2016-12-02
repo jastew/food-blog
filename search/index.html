@@ -27,7 +27,7 @@ menu_index: 9
         description: "{{ post.description }}",
         url: "{{ post.url | relative_url }}",
         category: "{{ post.category }}",
-        ingredients: "{{ post.ingredients | map: 'items' | map: 'name' | join: ', ' }}",
+        ingredients: "{{ post.ingredient-groups | map: 'ingredients' | map: 'ingredient' | join: ', ' }}",
       },
     {% endfor %}
   ];

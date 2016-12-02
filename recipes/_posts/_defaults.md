@@ -7,7 +7,7 @@ prep: ''
 cook: ''
 serves: ''
 ingredient-groups:
-  - group_name: ''
+  - name: ''
     ingredients:
       - ingredient: ''
         amount: ''

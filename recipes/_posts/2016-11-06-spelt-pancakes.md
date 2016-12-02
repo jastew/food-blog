@@ -3,12 +3,12 @@ title: Spelt Pancakes
 category:
   - Breakfast
 description: Tasty treat to kick start your mornings
-image: /IMAG1013.jpg
+image: /images/recipes/IMAG1013.jpg
 prep: 5 minutes
 cook: 10 minutes
 serves: 3 large / 6 small
 ingredient-groups:
-  - group_name: Dry
+  - name: Dry
     ingredients:
       - ingredient:
           - spelt-flour
@@ -19,7 +19,7 @@ ingredient-groups:
       - ingredient:
           - milled-flax-seed
         amount: 1tbsp
-  - group_name: Wet
+  - name: Wet
     ingredients:
       - ingredient:
           - rice-milk
@@ -34,7 +34,10 @@ ingredient-groups:
           - vanilla-esscence
         amount: 1tsp
 instructions:
-  -
+  - Combine and mix well the dry ingredients.
+  - Mix the wet ingredients in to the dry and mix until a smooth batter is created.
+  - Add a small amount of oil to the a pan on a medium heated pan.
+  - Add the batter to the pan.
+  - When bubbles appear in the center of the pancake it is time to flip.
+  - Once cooked to your liking top with your favourite toppings. I like to use maple syrup and dark chocolate. :)
 ---
-
-
