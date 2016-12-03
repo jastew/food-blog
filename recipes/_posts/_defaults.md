@@ -1,16 +1,16 @@
 ---
-title: ''
-category: ''
-description: ''
-image: ''
-prep: ''
-cook: ''
-serves: ''
+title:
+categories:
+description:
+image:
+prep:
+cook:
+serves:
 ingredient-groups:
-  - name: ''
+  - name:
     ingredients:
-      - ingredient: ''
-        amount: ''
+      - ingredient:
+        amount:
 instructions:
   -
 ---

@@ -26,7 +26,7 @@ menu_index: 9
         title: "{{ post.title }}",
         description: "{{ post.description }}",
         url: "{{ post.url | relative_url }}",
-        category: "{{ post.category }}",
+        category: "{{ post.categories | join: ', ' }}",
         ingredients: "{{ post.ingredient-groups | map: 'ingredients' | map: 'ingredient' | join: ', ' }}",
       },
     {% endfor %}
@@ -72,7 +72,7 @@ menu_index: 9
     }
     // Show the search results on the page
     search_container.innerHTML = html;
-
+    // Take focus away from the input (hides the keyboard on touch devices)
     search_input.blur();
   }
 
@@ -84,7 +84,7 @@ menu_index: 9
     html +=    '</h3>';
     html +=    '<p><small>' + recipe.category + '</small></p>';
     html +=    '<p class="search-results__copy">' + recipe.description + '</p>';
-    html +=    '<p class="search-results__ingredients"><strong>Ingredients: </strong>' + recipe.ingredients + '</p>';
+    html +=    '<p class="search-results__ingredients"><strong>Ingredients: </strong>' + recipe.ingredients.split(search).join('<span class="highlight">' + search + '</span>') + '</p>';
     html += '</li>';
   }
 

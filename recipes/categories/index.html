@@ -1,0 +1,11 @@
+---
+layout: default
+title: Categories
+menu_index: 3
+---
+<h1>Categories</h1>
+<ul>
+  {% for category in site.categories %}
+    <li><a href="{{ category.url | relative_url }}">{{ category.name }}</a></li>
+  {% endfor %}
+</ul>

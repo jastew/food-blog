@@ -1,7 +1,7 @@
 ---
 title: Spelt Pancakes
 author:
-category:
+categories:
   - Breakfast
 description: Tasty treat to kick start your mornings
 image: /images/recipes/IMAG1013.jpg
@@ -34,6 +34,14 @@ ingredient-groups:
       - ingredient:
           - vanilla-esscence
         amount: 1tsp
+  - name: Toppings
+    ingredients:
+      - ingredient:
+          - maple-syrup
+        amount: 200ml
+      - ingredient:
+          - dark-chocolate
+        amount: 20g
 instructions:
   - Combine and mix well the dry ingredients.
   - Mix the wet ingredients in to the dry and mix until a smooth batter is created.
@@ -42,5 +50,3 @@ instructions:
   - When bubbles appear in the center of the pancake it is time to flip.
   - 'Once cooked to your liking top with your favourite toppings. I like to use maple syrup and dark chocolate. :)'
 ---
-
-

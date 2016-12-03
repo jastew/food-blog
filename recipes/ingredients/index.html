@@ -5,7 +5,7 @@ menu_index: 6
 ---
 <h1>My Ingredients</h1>
 <ul>
-  {% for ingredient in site.ingredient %}
+  {% for ingredient in site.ingredients %}
     <li>
       <a href="{{ ingredient.url | relative_url }}">{{ ingredient.name }}</a>
     </li>
