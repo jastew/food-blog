@@ -8,4 +8,4 @@ stores:
 ---
 
 
-My favorite non-dairy milk. I love it in my overnight oats and spelt pancakes. I must go through about 3 liters a week.
+My favorite non-dairy milk. I love it in my overnight oats and [spelt pancakes](/recipes/breakfast/spelt-pancakes.html). I must go through about 3 liters a week.
