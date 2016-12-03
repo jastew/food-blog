@@ -1,0 +1,3 @@
+---
+name: Vegetable Stock
+---
