@@ -3,5 +3,5 @@ name: Salt
 image:
 stores:
   - store:
-    image:
+    link:
 ---
