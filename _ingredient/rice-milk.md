@@ -1,6 +1,6 @@
 ---
 name: Rice Milk
-image:
+image: 'https://www.alpro.com/upload/products/_Alpro+Drink+Rice+Original+1L+edge+UK+copy_540x576_p.png'
 stores:
   - store:
     image:
