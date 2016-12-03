@@ -1,5 +1,20 @@
 ---
 layout: default
 ---
-<h1>{{ page.title }}</h1>
-{{ page.content }}
+<div class="ingredient">
+  <div class="ingredient__head">
+    <h1>{{ page.title }}</h1>
+  </div>
+  {% if page.image %}
+  <div class="ingredient__media">
+    <img src="{{ page.image }}" alt="">
+  </div>
+  {% endif %}
+  <div class="ingredient__body">
+    {{ page.content }}
+  </div>
+</div>
+
+<div class="ingredient__comments">
+  {% include comments.html %}
+</div>

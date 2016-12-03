@@ -1,0 +1,13 @@
+.ingredient {
+
+  &__media {
+    float: right;
+    max-width: 300px;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  &__body {
+    overflow: hidden;
+  }
+}
