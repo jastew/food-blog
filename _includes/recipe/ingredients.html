@@ -1,3 +1,4 @@
+{% if page.ingredient-groups[0].ingredients[0].ingredient %}
 <div class="recipe__ingredients">
   <h2 class="ingredients__title">Ingredients</h2>
   {% if page.ingredient-groups.size > 1 %}
@@ -31,3 +32,4 @@
   {% endfor %}
   </ul>
 </div>
+{% endif %}

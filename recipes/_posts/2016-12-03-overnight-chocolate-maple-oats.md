@@ -23,7 +23,7 @@ ingredient-groups:
           - cacao-powder
         amount: 2tsp
 instructions:
-  -
+  - Combine and mix well all the ingredients.
+  - Cover and leave in the fridge overnight.
+  - The next day top with some puffed rice or bran flakes for a bit of texture and enjoy.
 ---
-
-

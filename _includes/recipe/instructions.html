@@ -1,3 +1,4 @@
+{% if page.instructions[0] %}
 <div class="recipe__instructions">
   <h2>Instructions</h2>
   <ol itemprop="recipeInstructions">
@@ -6,3 +7,4 @@
     {% endfor %}
   </ol>
 </div>
+{% endif %}
