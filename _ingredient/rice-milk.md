@@ -5,3 +5,6 @@ stores:
   - store:
     image:
 ---
+
+
+som info
