@@ -5,13 +5,12 @@
 
   &--striped li {
 
-    &:nth-child(odd) {
+    &:nth-child(even) {
       background: #eee;
     }
   }
 
-  li > a {
-    display: block;
-    padding: 1rem;
+  &--inline li {
+    display: inline-block;
   }
 }

@@ -1,4 +1,11 @@
 .ingredient {
+  margin-bottom: 2rem;
+
+  &__head {
+    @media screen and (min-width: 700px) {
+      float: left;
+    }
+  }
 
   &__media {
     margin-bottom: 1rem;
@@ -8,6 +15,10 @@
       max-width: 300px;
       margin-left: 1rem;
     }
+  }
+
+  &__body {
+    clear: left;
   }
 
   &__body {

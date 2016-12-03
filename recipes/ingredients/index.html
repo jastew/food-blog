@@ -3,11 +3,12 @@ layout: default
 title: Ingredients
 menu_index: 6
 ---
+{% assign ingredients = site.ingredient | where_exp: "stores", "stores.image != nil " %}
 <h1>My Ingredients</h1>
 <ul class="list list--striped">
-  {% for ingredient in site.ingredient %}
+  {% for ingredient in ingredients %}
     <li>
-      <a href="{{ ingredient.url | relative_url }}">{{ ingredient.name }}</a>
+      <a href="{{ ingredient.url | relative_url }}" class="btn btn--block">{{ ingredient.name }}</a>
     </li>
   {% endfor %}
 </ul>
