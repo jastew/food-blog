@@ -30,25 +30,25 @@ layout: default
       {% endif %}
     </div>
 
-    {% include recipes/ingredients.html %}
+    {% include recipe/ingredients.html %}
 
-    {% include recipes/instructions.html %}
+    {% include recipe/instructions.html %}
 
   </div>
 
   <div class="recipe__cta">
 
-    {% include recipes/share.html %}
+    {% include recipe/share.html %}
 
-    {% include recipes/print.html %}
+    {% include recipe/print.html %}
 
   </div>
 
-  {% include recipes/author.html %}
+  {% include recipe/author.html %}
 
 </div>
 
-{% include recipes/navigation.html %}
+{% include recipe/navigation.html %}
 
 {% if page.comments %}
   <div class="recipe__comments">

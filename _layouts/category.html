@@ -1,12 +1,10 @@
 ---
 layout: default
 ---
+{% assign posts = site.posts | where_exp: "post", "post.categories contains page.name" %}
+
 <h1>{{ page.title }}</h1>
+
 {{ content }}
-<ul class="list list--striped">
-  {% for post in site.posts %}
-    {% if post.categories contains page.name %}
-    <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
-    {% endif %}
-  {% endfor %}
-</ul>
+
+{% include recipes.html posts=posts %}

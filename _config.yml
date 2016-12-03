@@ -41,7 +41,7 @@ defaults:
     values:
       layout: recipe
       comments: true
-      type: article
+      type: recipe
       author: jason
   -
     scope:

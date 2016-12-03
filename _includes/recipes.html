@@ -1,0 +1,18 @@
+<ul class="posts"><!--
+  {% for post in posts %}
+--><li class="posts__item">
+      <div class="post">
+        <a href="{{ post.url | relative_url }}" class="post__image">
+          <img src="{{ post.image | relative_url }}" alt="" />
+        </a>
+        <div class="post__body">
+          <p class="post__category post__category--{{ post.category }}">{{ post.category }}</p>
+          <h2 class="post__title"><a href="{{ post.url | relative_url }}" class="post__link">{{ post.title }}</a></h2>
+          <p class="post__date">{{ post.date | date: '%B %d, %Y' }}</p>
+          <p class="post__copy">{{ post.description }}</p>
+          <a href="{{ post.url | relative_url }}" class="btn post__cta">View Recipe</a>
+        </div>
+      </div>
+    </li><!--
+  {% endfor %}
+--></ul>
