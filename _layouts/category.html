@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-{% assign posts = site.posts | where_exp: "post", "post.categories contains page.name" %}
+{% assign posts = site.posts | where_exp: "post", "post.categories contains page.slug" %}
 
 <h1>{{ page.title }}</h1>
 

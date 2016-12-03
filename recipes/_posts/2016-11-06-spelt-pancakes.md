@@ -2,7 +2,7 @@
 title: Spelt Pancakes
 author:
 categories:
-  - Breakfast
+  - breakfast
 description: Tasty treat to kick start your mornings
 image: /images/recipes/IMAG1013.jpg
 prep: 5 minutes
