@@ -4,7 +4,7 @@ image: 'https://www.alpro.com/upload/products/_Alpro+Drink+Rice+Original+1L+edge
 stores:
   - store:
       - tesco
-    image:
+    link:
 ---
 
 
