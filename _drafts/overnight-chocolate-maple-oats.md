@@ -11,7 +11,17 @@ ingredient-groups:
   - name:
     ingredients:
       - ingredient:
-        amount:
+          - jumbo-oats
+        amount: 100g
+      - ingredient:
+          - rice-milk
+        amount: 250ml
+      - ingredient:
+          - maple-syrup
+        amount: 15g
+      - ingredient:
+          - cacao-powder
+        amount: 2tsp
 instructions:
   -
 ---
