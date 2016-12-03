@@ -7,4 +7,4 @@ stores:
 ---
 
 
-som info
+some info about rice milk
