@@ -1,4 +1,7 @@
 ---
 name: Apple Cider Vinegar
-code: apple-cider-vinegar
+image:
+stores:
+  - store:
+    image:
 ---

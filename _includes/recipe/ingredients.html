@@ -11,12 +11,16 @@
         <ul class="ingredients__items">
           {% for ingredient in ingredient_group.ingredients %}
 
-            {% assign ingredient_obj = site.ingredients | where:"slug", ingredient.ingredient[0] | first %}
+            {% assign ingredient_obj = site.ingredient | where:"slug", ingredient.ingredient[0] | first %}
 
             <li class="ingredients__item">
               <div class="ingredient" itemprop="recipeIngredient">
                 <span class="ingredient__amount">{{ ingredient.amount }}</span>
-                <a href="{{ ingredient_obj.url | relative_url }}" class="ingredient__name">{{ ingredient_obj.name }}</a>
+                {% if ingredient_obj.image %}
+                  <a href="{{ ingredient_obj.url | relative_url }}" class="ingredient__name">{{ ingredient_obj.name }}</a>
+                {% else %}
+                  <span class="ingredient__name">{{ ingredient_obj.name }}</span>
+                {% endif %}
               </div>
             </li>
           {% endfor %}

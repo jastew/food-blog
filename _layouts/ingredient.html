@@ -1,16 +1,16 @@
 ---
 layout: default
 ---
-<div class="ingredient">
-  <div class="ingredient__head">
+<div class="l-ingredient">
+  <div class="l-ingredient__head">
     <h1>{{ page.title }}</h1>
   </div>
   {% if page.image %}
-  <div class="ingredient__media">
+  <div class="l-ingredient__media">
     <img src="{{ page.image }}" alt="">
   </div>
   {% endif %}
-  <div class="ingredient__body">
+  <div class="l-ingredient__body">
     {{ page.content }}
 
     {% if page.stores %}
@@ -27,6 +27,6 @@ layout: default
   </div>
 </div>
 
-<div class="ingredient__comments">
+<div class="l-ingredient__comments">
   {% include comments.html %}
 </div>
