@@ -19,7 +19,7 @@ layout: default
         {% for store in page.stores %}
           {% assign store_obj = site.store | where: "slug", store.store[0] | first %}
           <tr>
-            <rh>{{ store_obj.name }}</th>
+            <th>{{ store_obj.name }}</th>
             <td><a href="{{ store.link }}" target="_blank">View it here</a></td>
           </tr>
         {% endfor %}
