@@ -17,7 +17,7 @@ layout: default
       <h3>{{ page.name }} is available in the following stores</h3>
       <ul>
         {% for store in page.stores %}
-          {% assign store_obj = site.store | where: "slug", store.store | first %}
+          {% assign store_obj = site.store | where: "slug", store.store[0] | first %}
           <li>
             <strong>{{ store_obj.name }}</strong> <a href="{{ store.link }}" target="_blank">View it here</a>
           </li>
