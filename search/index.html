@@ -84,7 +84,9 @@ menu_index: 9
     html +=    '</h3>';
     html +=    '<p><small>' + recipe.category + '</small></p>';
     html +=    '<p class="search-results__copy">' + recipe.description + '</p>';
-    html +=    '<p class="search-results__ingredients"><strong>Ingredients: </strong>' + recipe.ingredients.split(search).join('<span class="highlight">' + search + '</span>') + '</p>';
+    if (recipe.ingredients) {
+      html +=  '<p class="search-results__ingredients"><strong>Ingredients: </strong>' + recipe.ingredients.split(search).join('<span class="highlight">' + search + '</span>') + '</p>';
+    }
     html += '</li>';
   }
 
