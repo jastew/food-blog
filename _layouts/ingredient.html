@@ -14,7 +14,7 @@ layout: default
     {{ page.content }}
 
     {% if page.stores %}
-      <h3>Available in the following stores</h3>
+      <h3>{{ page.name }} is available in the following stores</h3>
       <ul>
         {% for store in page.stores %}
           {% assign store_obj = site.store | where: "slug", store.store | first %}
