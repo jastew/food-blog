@@ -15,7 +15,7 @@ layout: default
 
     {% if page.stores[0].store != nil %}
       <p><strong>{{ page.name }} is available in the following stores</strong></p>
-      <ul class="list list--inline">
+      <ul class="list list--inline l-ingredient__stores">
         {% for store in page.stores %}
           {% assign store_obj = site.store | where: "slug", store.store[0] | first %}
           <li>
