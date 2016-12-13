@@ -11,6 +11,6 @@ stores:
 ---
 
 
-This magical chocolate powder will add a touch of naughtiness without the guilt.  I tend to match it with some sort of sweetener such as [maple](/recipes/ingredients/maple-syrup/) or [agave](/recipes/ingredients/agave-syrup/) syrup as I find it to be too bitter without it.
+This magical chocolate powder will add a touch of naughtiness without the guilt. &nbsp;I tend to match it with some sort of sweetener such as [maple](/ingredients/maple-syrup/) or [agave](/ingredients/agave-syrup/) syrup as I find it to be too bitter without it.
 
 I add it to my [overnight oats](/breakfast/overnight-chocolate-maple-oats.html) every morning and use it when making bars.
