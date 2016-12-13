@@ -19,7 +19,9 @@ layout: default
         {% for store in page.stores %}
           {% assign store_obj = site.store | where: "slug", store.store[0] | first %}
           <li>
-            <a href="{{ store.link }}" target="_blank" class="btn btn--default">{{ store_obj.name }} <i class="fa fa-external-link"></i></a>
+            <a href="{{ store.link }}" target="_blank" class="">
+              <img src="{{ store_obj.image }}" alt="{{ store_obj.name }}">
+            </a>
           </li>
         {% endfor %}
       </ul>

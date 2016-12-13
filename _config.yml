@@ -33,13 +33,13 @@ collections:
     permalink: /recipes/:path/
   ingredient:
     output: true
-    permalink: /recipes/ingredients/:path/
+    permalink: /ingredients/:path/
   store:
     output: false
 defaults:
   -
     scope:
-      path: "recipes"
+      path: ""
     values:
       layout: recipe
       comments: true
@@ -67,3 +67,5 @@ exclude:
   - node_modules
   - package.json
   - gulpfile.js
+include:
+  - '_pages'

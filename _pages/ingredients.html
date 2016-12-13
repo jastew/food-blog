@@ -2,6 +2,7 @@
 layout: default
 title: Ingredients
 menu_index: 6
+permalink: /ingredients/
 ---
 {% assign ingredients = site.ingredient | where_exp: "stores", "stores.image != nil " %}
 <h1>My Ingredients</h1>
