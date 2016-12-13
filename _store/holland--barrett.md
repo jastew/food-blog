@@ -1,4 +1,6 @@
 ---
 name: 'Holland & Barrett'
-image:
+image: /images/stores/holland_and_barrett.png
 ---
+
+
