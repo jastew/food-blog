@@ -20,7 +20,7 @@ layout: default
           {% assign store_obj = site.store | where: "slug", store.store[0] | first %}
           <li>
             <a href="{{ store.link }}" target="_blank" class="">
-              <img src="{{ site.url }}{{ store_obj.image }}" alt="{{ store_obj.name }}">
+              <img src="{{ site.base_dir }}{{ store_obj.image }}" alt="{{ store_obj.name }}">
             </a>
           </li>
         {% endfor %}
