@@ -24,4 +24,12 @@
   &__body {
     overflow: hidden;
   }
+
+  &__stores {
+    li {
+      display: inline-block;
+      margin-right: 1em;
+      margin-bottom: 1em;
+    }
+  }
 }
