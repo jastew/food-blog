@@ -2,7 +2,8 @@
 name: Cacao Powder
 image: 'http://images.hollandandbarrettimages.co.uk/productimages/HB/724/010234_A.png'
 stores:
-  - name: 'Holland & Barrett'
+  - store: 
+    - holland--barrett
     link: 'http://www.hollandandbarrett.ie/shop/product/naturya-organic-cacao-powder-60010234'
 ---
 
