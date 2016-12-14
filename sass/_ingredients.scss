@@ -1,0 +1,37 @@
+.l-ingredients {
+
+  &__items {
+    padding: 0;
+    margin: 0 0 -1rem -1rem;
+    list-style-type: none;
+  }
+
+  &__item {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 25%;
+    padding: 0 0 1rem 1rem;
+    text-align: center;
+    box-sizing: border-box;
+
+    @media screen and (max-width: 960px) {
+      width: 33.3334%;
+    }
+    @media screen and (max-width: 500px) {
+      width: 50%;
+    }
+    @media screen and (max-width: 300px) {
+      display: block;
+      width: auto;
+    }
+  }
+
+  &__image {
+    display: block;
+  }
+
+  &__name {
+    display: block;
+    padding: 1em;
+  }
+}

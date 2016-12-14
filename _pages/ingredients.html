@@ -6,10 +6,13 @@ permalink: /ingredients/
 ---
 {% assign ingredients = site.ingredient | where_exp: "stores", "stores.image != nil " %}
 <h1>My Ingredients</h1>
-<ul class="list">
+<ul class="l-ingredients__items"><!--
   {% for ingredient in ingredients %}
-    <li>
-      <a href="{{ ingredient.url | relative_url }}" class="btn btn--block">{{ ingredient.name }}</a>
-    </li>
+--><li class="l-ingredients__item">
+      <a href="{{ ingredient.url | relative_url }}" class="l-ingredients__image">
+        <img src="{{ ingredient.image }}" alt="">
+      </a>
+      <a href="{{ ingredient.url | relative_url }}" class="l-ingredients__name">{{ ingredient.name }}</a>
+    </li><!--
   {% endfor %}
-</ul>
+--></ul>

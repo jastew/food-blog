@@ -2,6 +2,7 @@
 name:
 image:
 stores:
-  - name:
+  - store:
+    - 
     link:
 ---
